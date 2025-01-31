@@ -12,7 +12,8 @@
             position: relative;
             background-image: linear-gradient(to top, #000000, rgb(33, 33, 46));
             background-size: cover;
-            width: 100vw;
+            width: 100vh;
+            overflow-x: hidden;
         }
         </style>
         <style>
@@ -71,8 +72,8 @@
                 width: 100vw;
                 height: 200px;
                 margin: auto;
-                top: 700px;
-                background-image: url('Images/Pattern.jpg');
+                top: 650px;
+                background-image: url('Images/pattern.jpg');
                 background-size: cover;
                 position: relative;
                 display: flex;
@@ -109,10 +110,24 @@
                 background-size: cover;
             }
             .MoreDownloads {
-            
-            
+                margin: 0;
+                position: relative;
+                top: 650px;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bold;
+                color: white;
+                font-size: 20px;
+                display: flex;
             }
-            
+            .MoreDownloads:hover {
+                color: aqua;
+            }
+            html {
+  scroll-behavior: smooth;
+}
             </style>
         <div class="topmenu">
             <a href="#home">Home</a>
@@ -120,13 +135,19 @@
             <a href="#about">Info</a>
         </div>
         <div id="home" class="logo">
+            
             <div>
                 <a href="https://direct-link.net/1285344/minecraft-epic-mod-frfr" download>
                 <div id="home" class="buttondownload">
                     Download
                 </div>
             </a>
-                <div
+            <a href="moredownloadspage.html">
+            <div class="MoreDownloads">
+                Click Here For More Downloads!
+            </div>
+        </a>
+        </a>
             </div>
             <div class="split"></div>
         </div>
